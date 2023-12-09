@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #282c34;
+    color: #abb2bf;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Styling header */
+header {
+    background: #61afef;
+    color: #e6f1ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*hover effect for the header*/
+header :hover {
+    color: #d05865;
+}
+
+/* Student Info Section */
+#student-info {
+    background-color: #e06c75;
+    color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#student-info:hover {
+    background-color: #cf5968;
+    /* Slightly darker on hover */
+}
+
+.search-box input[type="text"] {
+    width: 70%;
+    background-color: #98c379;
+    color: #282c34;
+}
+
+*/ .search-box button {
+    width: 30%;
+    color: white;
+}
+
+/* Music Data Section */
+#music-data {
+    background-color: #353b45;
+    color: #dcdfe4;
+    padding: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #3e4451;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #4b5263;
+    /* Lighten background on hover */
+}
+
+/* Styling of footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #353b45;
+    color: #dcdfe4;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #61afef;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e06c75;
+    /* Change color on hover */
+}
