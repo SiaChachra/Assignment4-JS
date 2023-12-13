@@ -3,7 +3,7 @@ function fetchMusicData() {
     // Retrieve the search term entered by the user
     let searchTerm = document.getElementById('search-term').value.trim();
 
-    // Check if the search term is empty
+    // Checking if the search term is empty
     if (!searchTerm) {
         // Display a message prompting to enter a search term
         document.getElementById('music-data').innerHTML = '<p>Please enter an artist name to search.</p>';
@@ -13,7 +13,7 @@ function fetchMusicData() {
     // Construct the API URL with the encoded search term
     const apiUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(searchTerm)}&media=music`;
 
-    // Make an API request to fetch music data
+    // Making an API request to fetch music data
     fetch(apiUrl)
         .then(response => {
             // Convert the response to JSON
