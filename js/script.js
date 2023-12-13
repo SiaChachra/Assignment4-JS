@@ -20,7 +20,7 @@ function fetchMusicData() {
             return response.json();
         })
         .then(data => {
-            // Check if no results were found
+            // Checking if no results were found
             if (data.results.length === 0) {
                 // Throw an error if no results are found
                 throw new Error('No results found for the given artist');
@@ -31,21 +31,18 @@ function fetchMusicData() {
             // Start building the HTML content to display the results
             let htmlContent = `<h2>Music Results for "${searchTerm}"</h2><ul>`;
 
-            // Loop through each track and append it to the HTML content
+            // Loop through each track 
             tracks.forEach(track => {
                 htmlContent += `<li>${track.artistName} - ${track.trackName}</li>`;
             });
 
-            // Close the unordered list HTML tag
             htmlContent += '</ul>';
 
-            // Update the page with the new HTML content
             document.getElementById('music-data').innerHTML = htmlContent;
         })
         .catch(error => {
-            // Log the error to the console
             console.error('Error:', error);
-            // Display an error message to the user
+            // Display an error message
             document.getElementById('music-data').innerHTML = `<p>Error: ${error.message}</p>`;
         });
 }

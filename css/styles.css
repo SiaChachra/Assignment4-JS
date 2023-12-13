@@ -46,9 +46,9 @@ header :hover {
     margin-bottom: 30px;
 }
 
+/* Slightly darker on hover */
 #student-info:hover {
     background-color: #cf5968;
-    /* Slightly darker on hover */
 }
 
 .search-box input[type="text"] {
@@ -105,7 +105,8 @@ footer a {
     transition: color 0.3s;
 }
 
+/* Changing color on hover */
 footer a:hover {
     color: #e06c75;
-    /* Change color on hover */
+
 }
