@@ -1,4 +1,9 @@
-/* General Body Styling */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #282c34;
@@ -6,6 +11,12 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+#music-data {
+    flex: 1;
 }
 
 .container {
@@ -80,7 +91,6 @@ li:hover {
 
 /* Styling of footer */
 footer {
-    margin-top: 40px;
     padding: 20px;
     background-color: #353b45;
     color: #dcdfe4;
